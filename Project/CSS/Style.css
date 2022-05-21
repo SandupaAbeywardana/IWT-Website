@@ -58,6 +58,16 @@ h1{
     text-align: center;
     text-shadow: 3px 3px 5px #a1a1a5;
 }
+
+.imgslider {
+    display:none;                                       
+}
+
+#slidediv{
+    padding-bottom: 50px;
+    padding-top: 50px;          
+}
+
 .title{
     
     background: #006666;
