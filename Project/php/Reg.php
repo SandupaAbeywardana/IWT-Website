@@ -18,7 +18,7 @@ $confirm_password = $_POST["cpsw"];
 	
 	if(mysqli_query($conn,$SQL)){
 		echo "<script type='text/javascript'>alert('Successfully registered')</script>";
-        echo('<script>window.location.replace("http://localhost/IWT-Website/Project/src/HTML/login.html");</script>');
+        echo('<script>window.location.replace("../HTML/login.html");</script>');
 	}
 	else{
 		echo "<script>alert ('Registration unsuccessful.')</script>";
