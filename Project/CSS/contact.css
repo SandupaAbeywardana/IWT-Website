@@ -102,12 +102,15 @@ form .submit:hover {
 }
 
 .vstus {
-    text-align: left;
+    position: relative;
+    left : 20px
 }
 
 .cntcus {
-    text-align: left;
+    float: left;
     text-transform: lowercase;
+    position: relative;
+    left : 20px
 }
 
 /*--footer--*/
