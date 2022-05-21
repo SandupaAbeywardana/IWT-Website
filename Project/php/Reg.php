@@ -17,10 +17,11 @@ $confirm_password = $_POST["cpsw"];
 	
 	
 	if(mysqli_query($conn,$SQL)){
-		echo "<script>alert ('Your Data Submited')</script>";
+		echo "<script type='text/javascript'>alert('Successfully registered')</script>";
+        echo('<script>window.location.replace("http://localhost/IWT-Website/Project/src/HTML/login.html");</script>');
 	}
 	else{
-		echo "<script>alert ('Your Data Not Submited 222')</script>";
+		echo "<script>alert ('Registration unsuccessful.')</script>";
 	}
 	
 	mysqli_close($conn);
