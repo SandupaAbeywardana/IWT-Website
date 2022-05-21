@@ -4,7 +4,6 @@
 <head>
     <title>Registration Form</title>
     <link rel="stylesheet" href="../CSS/Reg.css">
-    <script type="text/javascript" src="myScript.js"></script>
 </head>
 
 <body>
@@ -20,11 +19,11 @@
 
 
 
-            <li><a href=""><b>Home</b></a></li>
-            <li><a href=""><b>Archivements</b></a></li>
-            <li><a href=""><b>Product</b></a></li>
-            <li><a href=""><b>Contact us</b></a></li>
-            <li><a href=""><b>Log in</b></a></li>
+            <li><a href="index.html"><b>Home</b></a></li>
+            <li><a href="achievements.html"><b>Achievements</b></a></li>
+            <li><a href="products.html"><b>Product</b></a></li>
+            <li><a href="contact.html"><b>Contact us</b></a></li>
+            <li><a href="login.html"><b>Log in</b></a></li>
         </ul>
     </div>
 
@@ -46,7 +45,7 @@
 
 
 
-        <form method="POST" action="php/Reg.php">
+        <form method="POST" action="../php/Reg.php">
 
 
 
@@ -136,7 +135,18 @@
         </p>
     </section>
 
-
+<script type="text/javascript">
+    function chechPassword() {
+    const password = document.querySelector('input[name=psw]');
+    const confirm = document.querySelector('input[name=cpsw]');
+    if (confirm.value === password.value) {
+    confirm.setCustomValidity('');
+    } 
+    else {
+    confirm.setCustomValidity('Passwords do not match');
+    }
+}
+</script>
 </body>
 
 </html>
