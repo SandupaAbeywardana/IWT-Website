@@ -1,0 +1,93 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Career Page</title>
+        <link rel="stylesheet" href="styles/career.css">
+    </head>
+
+    <body>
+        <div class="menu">
+            <ul>
+                <li><a href="newarrivals.html"><b>Home</b></a></li>
+                <li><a href=""><b>Archivements</b></a></li>
+                <li><a href="products.html"><b>Product</b></a></li>
+                <li><a href="contact.html"><b>Contact us</b></a></li>
+                <li><a href="login.html"><b>Log in</b></a></li>
+            </ul>
+        </div>
+
+        <div id="top">
+            <p>Job Vacancies</p>
+        </div>
+        <div class="gg">
+            <div class="mainbox">
+                <div class="container">
+                   <form action="php/career.php" method="POST">
+                       <div id="user-details">
+                           <div class="input-box">
+                               <label class="details">Name*</label>
+                               <input type="text" placeholder="First Name" name="FirstName" style="width: 300px; margin-right: 10px;" required>
+                               <input type="text" placeholder="Last Name" name="LastName" style="width: 300px" required>
+                           </div>
+                           <div class="input-box">
+                                <label class="details">Birth Date</label>
+                                <input type="date" placeholder="Month/Date/Year" name="DOB" style="width: 430px" required>
+                            </div>
+                            <div class="input-box">
+                                <label class="details">Phone Number*</label>
+                                <input type="text" placeholder="Area code" name="AreaCode" style="width: 100px; margin-right: 10px;" required>
+                                <input type="text" placeholder="Phone Number" name="PhoneNumber" style="width: 430px" required>
+                            </div>
+                            <div class="input-box">
+                                <label class="details">Email Address</label>
+                                <input type="text" placeholder="myname@example.com" name="Email" style="width: 430px" required>
+                                
+                            </div>
+                            <div class="input-box">
+                                <label class="details">Address</label>
+                                <input type="text" placeholder="Street Address"  name="Address[]" style="width: 400px"> <br><br>
+                                <input class="difPos" type="text" placeholder="Street Address Line2" name="Address[]" style="width: 400px" ><br><br>
+                                <input class="difPos" type="text" placeholder="city"  name="Address[]" style="width: 268px;margin-right: 10px;">
+                                <input class="difPos" type="text" placeholder="State/Povince" name="Address[]" style="width: 268px;margin-right: 10px;" >
+                                <input class="difPos" type="text" placeholder="Country" name="Address[]" style="width: 150px;margin-right: 10px;" >
+                            </div>   
+                            <div class="input-box">
+                                <label for="vacancies">Available Vacancies :</label>
+                                <select name="vacancies" id="vacancies" style="width: 268px" required>
+                                    <option value="Select">Select</option>           
+                                    <option value="Executive">Executive</option>
+                                    <option value="Manager">Manager</option>
+                                    <option value="Knit Specialist">Knit Specialist</option>
+                                    <option value="Pattern Maker">Pattern Maker</option>
+                                </select>
+                            </div>
+                       </div>
+                            <input type="submit" name="submit" class="form-control submit" value="SUBMIT">
+                   </form>
+                </div>
+            </div>
+        </div>
+
+    
+
+       
+        <section class="footer">
+            <div class="social">
+                <a href="https://www.instagram.com"><img src="Images/instagram.jpeg" class="instagram" width="50px" height="50px"></a>
+                <a href="https://www.facebook.com"><img src="Images/facebook.jpeg" class="fb" width="50px" height="50px"></a>
+                <a href="https://www.snapchat.com"><img src="Images/snapchat.jpeg" class="snap" width="50px" height="50px"></a>
+                <a href="https://www.twitter.com"><img src="Images/twitter.jpeg" class="twitter" width="50px" height="50px"></a>
+            </div>
+            <ul class="list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Privacy & Policy</a></li>
+            </ul>
+            <p class="copyright">
+                The Chosen One Textile & Garment Management System @ 2022
+            </p>
+        </section>
+
+    </body>
+    </html>

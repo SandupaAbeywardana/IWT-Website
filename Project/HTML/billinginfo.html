@@ -1,0 +1,89 @@
+<html>
+
+<head>
+
+    <link rel="stylesheet" type="text/css" href="styles/billstyle.css">
+
+    <title>Billing Information</title>
+
+</head>
+
+<body>
+
+    <div class="menu">
+        <ul>
+            <li><a href=""><b>Home</b></a></li>
+            <li><a href=""><b>Register</b></a></li>
+            <li><a href=""><b>Login</b></a></li>
+            <li><a href=""><b>Product</b></a></li>
+            <li><a href=""><b>Contact Us</b></a></li>
+        </ul>
+    </div>
+
+
+
+    <div class="container">
+
+        <div class="topi">
+            <h2>Billing Information</h2>
+            <hr>
+        </div>
+        <form method="POST" action="php/billing.php">
+
+            <div class="inda">
+                <input type="fullname" name="fullname" placeholder="Full Name" required><br><br>
+                <input type="email" name="email" placeholder="Email" required><br><br>
+                <input type="contactno" name="contactno" placeholder="Contact Number" required><br><br>
+                <input type="city" name="city" placeholder="City" required><br><br>
+                <input type="address" name="address" placeholder="Address" required>
+                <hr>
+            </div>
+            <div class="pm">
+                <h3>Payment Method</h3>
+            </div>
+            <div class="smethod">
+                <select name="paymentmethod">
+				 <option value="Select"selected>Select</option>
+                 <option value="Card Payment">Card Payment</option>
+                 <option value="Cash On Delivery">Cach On Delivery</option>
+				</select>
+                <hr>
+            </div>
+            <div class="comme">
+                <h3>Enter Your Comment</h3>
+                <textarea rows=5 cols=50  name="comment">
+				
+</textarea>
+                <br><br>
+                <div class="sub">
+                    <input type="submit" name="submit" value="Order">
+                </div>
+            </div>
+    </div>
+
+    </form>
+    </div>
+
+    <section class="footer">
+        <div class="social">
+            <a href="https://www.instagram.com"><img src="images/insta.jpeg" class="insta" width="50px"
+                    height="50px"></a>
+            <a href="https://www.facebook.com"><img src="images/fb.jpeg" class="fb" width="50px" height="50px"></a>
+            <a href="https://www.snapchat.com"><img src="images/snap.jpeg" class="snap" width="50px" height="50px"></a>
+            <a href="https://www.twitter.com"><img src="images/twitter.jpeg" class="twitter" width="50px"
+                    height="50px"></a>
+        </div>
+        <ul class="list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Privacy & Policy</a></li>
+        </ul>
+        <p class="copyright">
+            The Chosen One Textile & Garment Management System @ 2022
+        </p>
+    </section>
+
+</body>
+
+</html>

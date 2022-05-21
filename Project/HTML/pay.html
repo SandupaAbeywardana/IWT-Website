@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="./styles/pay.css">
+
+
+
+
+
+    <body>
+
+
+        <div class="menu">
+            <ul>
+
+                <li>
+                    <a href=""><img src="./images/460b145b-2610-4b39-95a9-1df09218c7eb.jpg" class="logo" width="120px" height="100px"></a>
+                </li>
+
+
+
+
+                <li><a href=""><b>Home</b></a></li>
+                <li><a href=""><b>Archivements</b></a></li>
+                <li><a href=""><b>Product</b></a></li>
+                <li><a href=""><b>Contact us</b></a></li>
+                <li><a href=""><b>Log in</b></a></li>
+            </ul>
+        </div>
+
+
+        <form>
+            <div class="search">
+                <input type="text" placeholder="search">
+                <button class="search-button">Search</button>
+            </div>
+        </form>
+        <hr>
+
+
+</head>
+
+<body>
+
+
+
+
+    <form method="POST" action="php/pay.php">
+
+
+
+
+        <div class="mainBox">
+
+
+
+            <div class=h3>PAYMENT DETAILS</div>
+
+
+            <div class="formBox">
+
+                &nbsp
+                <lable for="cName"> </lable><b>Card Holder Name -</b> <input type="text" size="30" id="cName" name="cName" placeholder="John More Doe" required> </lable> <br>
+                <lable for="cNum"> </lable><b>Credit Card Number -</b> <input type="text" size="30" id="cNum" name="cNum" placeholder="1111-2222-3333-4444" required> </lable> <br>
+
+
+                <lable for="month" name="month"> <b>Exp Month -</b>
+                    <select id="month" onChange="show_month()">
+                    <option value="1"> 01 - Janaury</option>
+                    <option value="2"> 02 - February</option>
+                    <option value="3"> 03 - March</option>
+                    <option value="4"> 04 - April</option>
+                    <option value="5"> 05 - May</option>
+                    <option value="6"> 06 - June</option>
+                        <option value="7">07 - July</option>
+                        <option value="8"> 08 - August</option>
+                        <option value="9"> 09 - September</option>
+                        <option value="10"> 10 - October</option>
+                        <option value="11"> 11 - November</option>
+                        <option value="12"> 12 - December</option>
+                        </select> </lable>
+
+                &nbsp &nbsp &nbsp &nbsp &nbsp
+
+                <lable for="year" name="year"> <b>  Exp Year -</b>
+                    <select id="year" onChange="show_year()">
+                    <option value="1"> 2028</option>
+                    <option value="2">2027</option>
+                    <option value="3">2026</option>
+                    <option value="4"> 2025</option>
+                    <option value="5"> 2024</option>
+                    <option value="6"> 2023</option>
+                        <option value="7">2022</option>
+                        <option value="8"> 2021</option>
+                        </select> </lable>
+                <br> &nbsp &nbsp
+
+                <lable for="month"> </lable><b>cvv -</b> <input type="text" size="10" id="cvv" name="cvv" placeholder="123" required> <br> </lable>
+
+
+                <b>Email Address -</b>
+                <input type="email" id="em" name="em" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" size="30" placeholder="info@gmail.com" required><br>
+                <br><br>
+
+
+            </div>
+
+
+
+
+
+
+            <a href=""><img src="./images/download (1).png" class="crd" width="130px" height="23px"></a> <br>
+
+            <input type="submit" value="Place Order" class="btn">
+        </div>
+        </div>
+
+    </form>
+
+
+
+
+
+    <section class="footer">
+        <div class="social">
+            <a href="https://www.instagram.com"><img src="./images/8cf79628-3d0d-47c1-8d01-79212f95cc2b.jpg" class="instagram" width="50px" height="50px"></a>
+            <a href="https://www.facebook.com"><img src="./images/ef7ae984-ca0e-4fb1-8f2b-8de1bf158dde.jpg" class="fb" width="50px" height="50px"></a>
+            <a href="https://www.snapchat.com"><img src="./images/96e2c46c-23e5-42ed-bbd3-3039375003f4.jpg" class="snap" width="50px" height="50px"></a>
+            <a href="https://www.twitter.com"><img src="./images/80fb6791-d773-45dd-b4bd-addd8db5077d.jpg" class="twitter" width="50px" height="50px"></a>
+        </div>
+        <ul class="list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Privacy & Policy</a></li>
+        </ul>
+        <p class="copyright">
+            The Chosen One Textile & Garment Management System @ 2022
+        </p>
+    </section>
+
+
+
+
+
+</body>
+
+</html>

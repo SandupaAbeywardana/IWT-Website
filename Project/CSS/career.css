@@ -1,0 +1,158 @@
+.gg{
+    background-image: url("./Images/r1.png");
+
+}
+.menu{
+    width: 100%;
+    background: white;
+    overflow: auto;
+    
+}
+.menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 60px;
+    
+}
+.menu li{
+    float: left;
+    
+}
+.menu ul li a{
+    background: white;
+    text-decoration: none;
+    width: 150px;
+    display: block;
+    text-align: center;
+    color: #006666;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 0.5px;
+    
+}
+.menu li a:hover{
+    color: lightcoral;
+    opacity: 0.5px;
+    font-size: 19px;
+}
+
+#top{
+    text-align: center;   
+}
+#top p{
+       background-color: #176f56;
+       color: white;
+       margin: 0;
+       padding: 10px;
+       margin-bottom: 5%;
+}
+.mainbox{
+    
+    max-width: 1000px;
+    margin:auto;
+    padding:5% 2%;
+    border-style: solid;
+    border-color: grey;
+    margin-bottom: 5%;
+    background-color:rgb(201, 250, 234);
+}
+
+
+
+
+#user-details{
+    margin: 75px 15px 15px 35px;
+}
+.input-box{
+    margin: 15px;
+    margin-bottom: 50px;
+    margin-top: 5px;
+}
+.input-box label{
+    float: left;
+    width: 150px;
+    margin-right: 10px;
+    text-align: center;
+}
+.input-box input, .input-box select{
+    height: 35px;
+    margin-top:5px;
+}
+.difPos{
+    position: relative;
+    left: 160px;
+}
+form .submit {
+    display:flex;
+    justify-content: center;
+    text-align:center;
+    margin-left:70%;
+    margin-bottom: 5px;
+    background: gray;
+    border-color: transparent;
+    border-radius: 20px;
+    font-size: 10px;
+    font-weight: bold;
+    
+    letter-spacing: 2px;
+    height: 40px;
+    margin-top: 20px;
+}
+
+form .submit:hover {
+    background: darkred;
+}
+
+
+.footer{
+    padding: 40px 0;
+    background-color: gray;
+}
+.footer .social{
+    text-align: center;
+    padding-bottom: 25px;
+    color: black;
+}
+.footer .social a{
+    font-size: 24px;
+    color: inherit;
+    border: 1px solid;
+    width: 50px;
+    height: 50px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    margin: 1px;
+    opacity: 0.75;
+}
+.footer .social a:hover{
+    opacity: 0.9;
+}
+.footer ul{
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+.footer ul li a{
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+.footer ul li{
+    display: inline-block;
+    padding: 0 15px;
+}
+.footer ul li a:hover{
+    opacity: 1;
+}
+.footer .copyright{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 15px;
+    color: #006666;
+}

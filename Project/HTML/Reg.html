@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles/Reg.css">
+    <script src="js/myScript.js"></script>
+</head>
+
+<body>
+
+
+    <div class="menu">
+        <ul>
+
+            <li>
+                <a href=""><img src="./images/460b145b-2610-4b39-95a9-1df09218c7eb.jpg" class="logo" width="120px" height="100px"></a>
+            </li>
+
+
+
+
+            <li><a href=""><b>Home</b></a></li>
+            <li><a href=""><b>Archivements</b></a></li>
+            <li><a href=""><b>Product</b></a></li>
+            <li><a href=""><b>Contact us</b></a></li>
+            <li><a href=""><b>Log in</b></a></li>
+        </ul>
+    </div>
+
+
+    <form>
+        <div class="search">
+            <input type="text" placeholder="search">
+            <button class="search-button">Search</button>
+        </div>
+    </form>
+
+
+
+
+
+
+
+    <div class="bg">
+
+
+
+        <form method="POST" action="php/Reg.php">
+
+
+
+            <h1 class="h1">WELCOME!</h1>
+
+
+            <div class="mainbox">
+
+                <h3 class="h3">Create a New Account</h3>
+
+
+                <div class="regbox">
+                    <div class="regbox-container">
+                        <div class="sub-regbox">
+                            <label>First Name :</label>
+                            <input type="text" name="fname" required>
+                        </div>
+
+                        <div class="sub-regbox">
+                            <label>Last Name :</label>
+                            <input type="text" name="lname" required>
+                        </div>
+
+                        <div class="sub-regbox">
+                            <label>Email :</label>
+                            <input type="text" name="em" required>
+                        </div>
+
+                        <div class="sub-regbox">
+                            <label>Password :</label>
+                            <input type="password" name="psw" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" size="46" required onchange="chechPassword();">
+                        </div>
+
+                        <div class="sub-regbox">
+                            <label>Confirm Password :</label>
+                            <input type="password" name="cpsw" requred  onchange="chechPassword();">
+                        </div>
+
+                    </div>
+                </div>
+                <br>
+
+                <input type="checkbox" name="check1" id="check1"> &nbsp &nbsp
+                <lable for="check1"> Accept privacy police tearms </lable> <br>
+
+                <input type="submit" name="submit" id="sub" value="SIGN UP">
+
+                <hr>
+
+                <p class="p1"> &nbsp &nbsp &nbsp Already have account? </p>
+
+                <input type="button" name="log" id="log" value="LOG IN">
+
+            </div>
+
+
+            <div class="b2">
+                <input type="button" name="gog" id="gog" value="Continue with Google"> <br>
+                <input type="button" name="fb" id="fb" value="Continue with Facebook">
+            </div>
+
+
+    </div>
+
+    </form>
+
+
+
+
+
+
+    <section class="footer">
+        <div class="social">
+            <a href="https://www.instagram.com"><img src="./images/8cf79628-3d0d-47c1-8d01-79212f95cc2b.jpg" class="instagram" width="50px" height="50px"></a>
+            <a href="https://www.facebook.com"><img src="./images/ef7ae984-ca0e-4fb1-8f2b-8de1bf158dde.jpg" class="fb" width="50px" height="50px"></a>
+            <a href="https://www.snapchat.com"><img src="./images/96e2c46c-23e5-42ed-bbd3-3039375003f4.jpg" class="snap" width="50px" height="50px"></a>
+            <a href="https://www.twitter.com"><img src="./images/80fb6791-d773-45dd-b4bd-addd8db5077d.jpg" class="twitter" width="50px" height="50px"></a>
+        </div>
+        <ul class="list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Privacy & Policy</a></li>
+        </ul>
+        <p class="copyright">
+            The Chosen One Textile & Garment Management System @ 2022
+        </p>
+    </section>
+
+
+</body>
+
+</html>
