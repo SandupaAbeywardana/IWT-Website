@@ -1,5 +1,5 @@
 .bg {
-    background-size: 1500px 900px;
+    background-size: 100%;
     background-image: url('../images/contactbackgrd.jpg');
     background-repeat: repeat-y;
 }
@@ -104,15 +104,14 @@ form .submit:hover {
 .vstus {
     color: white;
     position: relative;
-    left : 20px
+    left: 20px;
 }
 
 .cntcus {
     color: white;
-    float: left;
     text-transform: lowercase;
     position: relative;
-    left : 20px
+    left: 20px;
 }
 
 /*--footer--*/

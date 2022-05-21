@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/careeredit.css">
+    <link rel="stylesheet" href="../CSS/careeredit.css">
     <title>Document</title>
     <style type="text/css">
         td{
@@ -25,7 +25,7 @@
                 <th>Phone Number</th>
                 <th>Email</th>
                 <th>Address</th> 
-                <th>Vacency</th>
+                <th>Vacancy</th>
                 </tr>
 
                 <?php 

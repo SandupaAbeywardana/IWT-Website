@@ -25,7 +25,7 @@
                             if($result_auth!=0)
                             {
                                 echo "<script type='text/javascript'>alert ('Your Data Submited')</script>";
-                                echo('<script>window.location.replace("http://localhost/Textile/src/php/careeredit.php");</script>');
+                                echo('<script>window.location.replace("careeredit.php");</script>');
                             }
                             else
                             {
