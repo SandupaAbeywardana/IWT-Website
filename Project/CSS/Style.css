@@ -53,6 +53,11 @@ h1{
     text-align: center;
     text-shadow: 3px 3px 5px darkblue;
 }
+#newA{
+    color: #ff0028;
+    text-align: center;
+    text-shadow: 3px 3px 5px #a1a1a5;
+}
 .title{
     
     background: #006666;
