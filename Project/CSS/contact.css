@@ -102,11 +102,13 @@ form .submit:hover {
 }
 
 .vstus {
+    color: white;
     position: relative;
     left : 20px
 }
 
 .cntcus {
+    color: white;
     float: left;
     text-transform: lowercase;
     position: relative;
