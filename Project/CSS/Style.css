@@ -104,7 +104,7 @@ h1{
     width: 200px;
     height: 200px;
 }
-.customer{
+#customer{
     text-align: center;
     font-size: 24px;
     color: white;
@@ -118,7 +118,7 @@ h1{
     border-bottom-left-radius: 20px;
     background: #006666;
 }
-.business{
+#business{
     text-align: center;
     font-size: 24px;
     color: white;
@@ -132,7 +132,7 @@ h1{
     border-bottom-left-radius: 20px;
     background: #006666;
 }
-.career{
+#career{
     text-align: center;
     font-size: 24px;
     color: white;
@@ -145,6 +145,11 @@ h1{
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
     background: #006666;
+}
+
+.cardlnk{
+    text-decoration: none;
+    color: inherit;
 }
 
 .footer{
