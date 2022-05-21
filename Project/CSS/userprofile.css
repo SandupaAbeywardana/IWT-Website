@@ -1,25 +1,26 @@
-body{
+body {
     background: white;
     margin: 0px;
 }
-.menu{
+
+.menu {
     width: 100%;
     background: white;
     overflow: auto;
-    
 }
-.menu ul{
+
+.menu ul {
     margin: 0;
     padding: 0;
     list-style: none;
     line-height: 60px;
-    
 }
-.menu li{
+
+.menu li {
     float: left;
-    
 }
-.menu ul li a{
+
+.menu ul li a {
     background: white;
     text-decoration: none;
     width: 150px;
@@ -29,62 +30,94 @@ body{
     font-size: 18px;
     font-family: 'Courier New', Courier, monospace;
     letter-spacing: 0.5px;
-    
 }
-.menu li a:hover{
+
+.menu li a:hover {
     color: lightcoral;
     opacity: 0.5px;
     font-size: 19px;
 }
 
-
-#topCenter{
- text-align: center;   
+#topCenter {
+    text-align: center;
 }
-#topCenter p{
+
+#topCenter p {
     background-color: #176f56;
     color: white;
     margin: 0;
     padding: 10px;
 }
-#p2{
-    padding:6px;
+
+#p2 {
+    padding: 6px;
 }
-#topCenter img{
+
+#topCenter img {
     margin: 0px;
     padding: 5px;
 }
-.r1{
+
+.user p {
+    text-align: center;
+}
+
+.user img {
+    padding: 10px;
+    margin-left: auto;
+}
+
+#u1 {
+    font-size: large;
+    font-style: normal;
+    text-align: center;
+}
+
+#u2 {
+    font-size: medium;
+    font-style: normal;
+    text-align: center;
+}
+
+#u3 {
+    font-size: small;
+    font-style: normal;
+    text-align: center;
+}
+
+.r1 {
     width: 100%;
     margin-top: 20px;
 }
-.r1 p{
+
+.r1 p {
     margin: 0;
     padding: 10px;
 }
-.r1 p a{
+
+.r1 p a {
     position: relative;
     left: 85px;
     text-decoration: none;
     color: black;
 }
-.r1 p:hover{
+
+.r1 p:hover {
     border: 1px solid black;
 }
 
-
-
-
-.footer{
+.footer {
     padding: 40px 0;
     background-color: gray;
 }
-.footer .social{
+
+.footer .social {
     text-align: center;
     padding-bottom: 25px;
     color: black;
 }
-.footer .social a{
+
+.footer .social a {
     font-size: 24px;
     color: inherit;
     border: 1px solid;
@@ -96,10 +129,12 @@ body{
     margin: 1px;
     opacity: 0.75;
 }
-.footer .social a:hover{
+
+.footer .social a:hover {
     opacity: 0.9;
 }
-.footer ul{
+
+.footer ul {
     margin-top: 0;
     padding: 0;
     list-style: none;
@@ -108,19 +143,23 @@ body{
     margin-bottom: 0;
     text-align: center;
 }
-.footer ul li a{
+
+.footer ul li a {
     color: inherit;
     text-decoration: none;
     opacity: 0.8;
 }
-.footer ul li{
+
+.footer ul li {
     display: inline-block;
     padding: 0 15px;
 }
-.footer ul li a:hover{
+
+.footer ul li a:hover {
     opacity: 1;
 }
-.footer .copyright{
+
+.footer .copyright {
     margin-top: 15px;
     text-align: center;
     font-size: 15px;
