@@ -1,6 +1,10 @@
+<?php include'config.php' ?>
+
 <?php
 
 if (isset($_POST['submit'])) { 
+
+        $SQL = "DELETE FROM payment";
 
         echo "<script>alert ('Payment Success!')</script>";
         echo('<script>window.location.replace("userprofile.php");</script>');
