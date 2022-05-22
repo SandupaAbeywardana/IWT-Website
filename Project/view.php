@@ -29,6 +29,7 @@ if (isset($_POST['submit'])) {
 
     if(mysqli_query($conn,$SQL)){
         echo "<script>alert ('Your Payment Data Deleted')</script>";
+        echo('<script>window.location.replace("pay.php");</script>');
 
     }
     else{
