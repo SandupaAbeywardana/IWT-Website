@@ -40,7 +40,7 @@
                             $row  = mysqli_fetch_array($sql);
                         }
                         else{
-                            echo "<script>document.getElementById('loginhide').style.display = 'none';</script>";
+                            echo "<script>document.getElementById('loginhide').style.display = 'block';</script>";
                         }
                 ?>
                 <div class="dropdown-content">
