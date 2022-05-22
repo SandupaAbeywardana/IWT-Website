@@ -58,7 +58,6 @@ if (isset($_POST['submit'])) {
             <div class="formBox">
 
                 <div class="b2">
-                    <a href="../edit.php"><input type="button" name="edit" id="edit" value="EDIT PAYMENT"></a> <br>
                     <input type="submit" name="submit" id="confirm" value="CONFIRM PAYMENT "></a>
                 </div>
 
