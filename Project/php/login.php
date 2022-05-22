@@ -28,6 +28,7 @@ if(isset($_POST['save']))
         $_SESSION["Confirm_Password"]=$row['Confirm_Password']; 
         $_SESSION["Acc_Type"]=$row['Acc_Type']; 
         $_SESSION["Password"]=$row['Password']; 
+        $SESSION["logged"] = 1;
         header("Location: userprofile.php"); 
     }
     else

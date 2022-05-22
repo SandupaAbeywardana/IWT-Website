@@ -4,41 +4,6 @@
         <title>Textile & Garment Management System</title>
         <link rel="stylesheet" href="../CSS/Style.css">
         <link rel="shortcut icon" type="Image/jpg" href="../Images/title.jpg">
-
-   <?php
-                        session_start();
-
-                        $servername ="localhost"; 
-                        $username = "root"; 
-                        $password = ""; 
-                        $db = "textile";
-
-                        // Create connection 
-                        $conn = new mysqli($servername, $username, $password,$db); 
-
-                        // Check connection 
-                            if ($conn->connect_error){ 
-                                die("Connection failed: " . $conn->connect_error); 
-                            }
-
-                        if (isset($_SESSION["id"])) {
-                            $id= $_SESSION["id"];
-                            $sql=mysqli_query($conn,"SELECT * FROM new_customers where id='$id' ");
-                            $row  = mysqli_fetch_array($sql);
-                        }
-                        else{
-                            echo "<script>document.getElementById('dropdown').style.display = 'none';</script>";
-                            echo "<script>document.getElementById('loginhide').style.display = 'block';</script>";
-                        }
-                        
-
-                        if(is_array($row)){
-                            echo "<script>document.getElementById('loginhide').style.display = 'none';</script>";
-                            echo "<script>document.getElementById('dropdown').style.display = 'block';</script>";
-
-                        }
-                ?>
-        
     </head>
     <body>
         <!-- Navigation bar -->
@@ -51,8 +16,33 @@
                 <li><a href="../HTML/contact.html"><b>Contact us</b></a></li>
                 <li id="loginhide"><a href="../HTML/login.html"><b>Log in</b></a></li>
             </ul>
-            <ul id="dropdown">
+            <ul class="dropdown">
                 <li><img src="../Images/user.png" width="60px" height="60px" class="dropbtn"></li>
+
+                <?php
+                        session_start();
+                        $_SESSION["logged"] = 0;
+                        $servername ="localhost"; 
+                        $username = "root"; 
+                        $password = ""; 
+                        $db = "textile";
+
+                        // Create connection 
+                        $conn = new mysqli($servername, $username, $password,$db); 
+
+                        // Check connection 
+                            if ($conn->connect_error){ 
+                                die("Connection failed: " . $conn->connect_error); 
+                            }
+                        if ($_SESSION["logged"] == 1) {
+                            $id= $_SESSION["id"];
+                            $sql=mysqli_query($conn,"SELECT * FROM new_customers where id='$id' ");
+                            $row  = mysqli_fetch_array($sql);
+                        }
+                        else{
+                            echo "<script>document.getElementById('loginhide').style.display = 'none';</script>";
+                        }
+                ?>
                 <div class="dropdown-content">
                     <li id="u1"><a href="../php/userprofile.php" class="drpdwntxt"><?php echo $_SESSION["First_Name"] ?></a></li><br>
                     <li><a href="logout.php" class="drpdwntxt">Sign Out</a></li>
