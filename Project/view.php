@@ -108,7 +108,7 @@ if (isset($_POST['submit'])) {
 
 
                     <div class="b2">
-                        <input type="button" name="edit" id="edit" value="EDIT PAYMENT"> <br>
+                        <a href="edit.php"><input type="button" name="edit" id="edit" value="EDIT PAYMENT"> <br>
                         <input type="submit" name="submit" id="confirm" value="DELETE PAYMENT DETAILS">
                        <a href="php/cancel.php"> <input type="button" name="button" id="confirm" value="CONFIRM PAYMENT DETAILS"></a>
 

@@ -2,11 +2,10 @@
 
 if (isset($_POST['submit'])) { 
 
-        echo "<script>alert ('Your Payment Data Deleted')</script>";
-        echo('<script>window.location.replace("pay.php");</script>');
+        echo "<script>alert ('Payment Success!')</script>";
+        echo('<script>window.location.replace("userprofile.php");</script>');
 
     }
-}
 
 ?>
 <!DOCTYPE html>
