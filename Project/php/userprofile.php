@@ -15,7 +15,7 @@
             <li><a href="../HTML/achievements.html"><b>Achievements</b></a></li>
             <li><a href="../HTML/products.html"><b>Product</b></a></li>
             <li><a href="../HTML/contact.html"><b>Contact us</b></a></li>
-            <li><a href="../HTML/login.html"><b>Log in</b></a></li>
+            <li id="loginhide"><a href="../HTML/login.html"><b>Log in</b></a></li>
         </ul>
     </div>
 
@@ -46,6 +46,10 @@
                 $id= $_SESSION["id"];
                 $sql=mysqli_query($conn,"SELECT * FROM new_customers where id='$id' ");
                 $row  = mysqli_fetch_array($sql);
+
+                if(is_array($row)){
+                    echo "<script>document.getElementById('loginhide').style.display = 'none';</script>";
+                }
         ?>
 
         <p id="u1"><?php echo $_SESSION["First_Name"] ?>&nbsp&nbsp<?php echo $_SESSION["Last_Name"] ?></p>
