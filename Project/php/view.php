@@ -45,7 +45,7 @@ if (isset($_POST['submit'])) {
 <html>
 
 <head>
-    <link rel="stylesheet" href="../Textile/styles/view.css">
+    <link rel="stylesheet" href="styles/view.css">
 </head>
 
 <body>
