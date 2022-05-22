@@ -17,8 +17,9 @@
     
 </head>
 <body>
+    <center>
     <div class="form">
-            <h1>Update Profile</h1>
+            <h1 >Update Profile</h1>
 
          <?php
             $status = "";
@@ -101,16 +102,16 @@
                 </div>
             </div>
                 
-                <p><input name="submit" type="submit" value="Update" /></p>
+                <p><input name="submit" type="submit" value="Update" id="update" style="border-radius: 10px;background: limegreen;border: none;height: 30px;"></p>
             </form>
            
             <?php } ?>
 
         </div>
-
-        <button onclick="deleteAcc();">DELETE ACCOUNT</button>
-
-    </div>
+<br><br>
+        <button onclick="deleteAcc();" id="delete" style="background: red;border-radius: 10px;height: 30px;border: none;">DELETE ACCOUNT</button>
+        </div>
+    </center>
     <script type="text/javascript">
 
     function chechPassword() {
