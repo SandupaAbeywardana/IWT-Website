@@ -40,7 +40,6 @@
             <li><a href="../HTML/achievements.html"><b>Achievements</b></a></li>
             <li><a href="../HTML/products.html"><b>Product</b></a></li>
             <li><a href="../HTML/contact.html"><b>Contact us</b></a></li>
-            <li id="loginhide"><a href="../HTML/login.html"><b>Log in</b></a></li>
         </ul>
     </div>
 

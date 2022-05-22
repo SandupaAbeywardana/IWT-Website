@@ -5,6 +5,7 @@
 if (isset($_POST['submit'])) { 
 
         $SQL = "DELETE FROM payment";
+        $result = mysqli_query($conn,$SQL) or die ( mysqli_error());
 
         echo "<script>alert ('Payment Success!')</script>";
         echo('<script>window.location.replace("userprofile.php");</script>');
