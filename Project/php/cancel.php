@@ -38,7 +38,7 @@ if (isset($_POST['submit'])) {
 
 
 
-    <form method="POST" id="payment-form" class="form-horizontal" action="php/pay.php">
+    <form method="POST" id="payment-form" class="form-horizontal" action="">
 
 
 
