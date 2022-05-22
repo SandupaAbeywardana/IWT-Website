@@ -60,11 +60,13 @@ body {
 
 .user p {
     text-align: center;
+    margin: 0;
 }
 
 .user img {
     padding: 10px;
     margin-left: auto;
+    margin-top: 10px;
 }
 
 #u1 {

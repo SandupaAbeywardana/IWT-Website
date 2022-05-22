@@ -26,9 +26,30 @@
     </div>
     <div class="user">
         <p> <img src="../Images/user.png" width="60px" height="60px"></p>
-        <p id="u1"> Name</p>
-        <p id="u2">UserName & Email</p>
-        <p id="u3">Mobile Number</p>
+
+        <?php
+                session_start();
+
+                $servername ="localhost"; 
+                $username = "root"; 
+                $password = ""; 
+                $db = "textile";
+
+                // Create connection 
+                $conn = new mysqli($servername, $username, $password,$db); 
+
+                // Check connection 
+                    if ($conn->connect_error){ 
+                        die("Connection failed: " . $conn->connect_error); 
+                    }
+
+                $id= $_SESSION["id"];
+                $sql=mysqli_query($conn,"SELECT * FROM new_customers where id='$id' ");
+                $row  = mysqli_fetch_array($sql);
+        ?>
+
+        <p id="u1"><?php echo $_SESSION["First_Name"] ?>&nbsp&nbsp<?php echo $_SESSION["Last_Name"] ?></p>
+        <p id="u2"><?php echo $_SESSION["Email"] ?></p>
     </div>
 
     <div class="r1">
