@@ -72,6 +72,15 @@
                             <input type="text" name="em" required>
                         </div>
 
+                        <lable for="accType" name="accType"> <b>Account Type -</b>
+                            <select id="accType" onChange="show_accType()">
+                                <option value="user"> User </option>
+                                <option value="client"> Client </option>
+                                <option value="exporter"> Exporter </option>
+                                <option value="wholesaler"> Wholesaler </option>
+                            </select>
+                        </lable>
+
                         <div class="sub-regbox">
                             <label>Password :</label>
                             <input type="password" name="psw" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" size="46" required onchange="chechPassword();">
