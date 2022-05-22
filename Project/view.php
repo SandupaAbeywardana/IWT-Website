@@ -40,6 +40,12 @@ if (isset($_POST['submit'])) {
     
 
 }
+if (isset($_POST['edit'])) { 
+        echo '<script type="text/javascript">
+        window.location.replace("/edit.php?"{$Email});
+        },1000)
+        </script>';
+}
 
 ?>
 <!DOCTYPE html>
@@ -108,7 +114,7 @@ if (isset($_POST['submit'])) {
 
 
                     <div class="b2">
-                        <a href="edit.php"><input type="button" name="edit" id="edit" value="EDIT PAYMENT"> <br>
+                        <input type="submit" name="edit" id="edit" value="EDIT PAYMENT"> <br>
                         <input type="submit" name="submit" id="confirm" value="DELETE PAYMENT DETAILS">
                        <a href="php/cancel.php"> <input type="button" name="button" id="confirm" value="CONFIRM PAYMENT DETAILS"></a>
 
