@@ -102,11 +102,14 @@
             </div>
                 
                 <p><input name="submit" type="submit" value="Update" /></p>
+                <button onclick="deleteAcc()">DELETE ACCOUNT</button>
             </form>
            
             <?php } ?>
 
         </div>
+
+        
     </div>
     <script type="text/javascript">
 
@@ -119,6 +122,12 @@
         else {
         confirm.setCustomValidity('Passwords do not match');
         }
+    }
+
+    deleteAcc(){
+        alert("Are you sure !?");
+        window.location.replace("deleteAcc.php");
+        
     }
 
 </script>

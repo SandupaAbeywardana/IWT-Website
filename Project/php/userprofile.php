@@ -25,9 +25,7 @@
                 $sql=mysqli_query($conn,"SELECT * FROM new_customers where id='$id' ");
                 $row  = mysqli_fetch_array($sql);
 
-                if(is_array($row)){
-                    echo "<script>document.getElementById('loginhide').style.display = 'none';</script>";
-                }
+                
         ?>
 
 </head>
