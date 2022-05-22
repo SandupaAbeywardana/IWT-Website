@@ -7,41 +7,48 @@
     </head>
     <body>
         <!-- Navigation bar -->
-        <div class="menu">
+        <div class="menu" style="font-size: 18px;">
             <ul>
                 <li><img src="../Images/title.jpg" width="50px" height="50px"></li>
                 <li><a href="index.php"><b>Home</b></a></li>
                 <li><a href="../HTML/achievements.html"><b>Achievements</b></a></li>
                 <li><a href="../HTML/products.html"><b>Product</b></a></li>
                 <li><a href="../HTML/contact.html"><b>Contact us</b></a></li>
-                <li><a href="../HTML/login.html"><b>Log in</b></a></li>
+                <li id="loginhide"><a href="../HTML/login.html"><b>Log in</b></a></li>
             </ul>
-            <p> <img src="../Images/user.png" width="60px" height="60px"></p>
+            <ul class="dropdown">
+                <li><img src="../Images/user.png" width="60px" height="60px" class="dropbtn"></li>
 
-            <?php
-                    session_start();
+                <?php
+                        session_start();
 
-                    $servername ="localhost"; 
-                    $username = "root"; 
-                    $password = ""; 
-                    $db = "textile";
+                        $servername ="localhost"; 
+                        $username = "root"; 
+                        $password = ""; 
+                        $db = "textile";
 
-                    // Create connection 
-                    $conn = new mysqli($servername, $username, $password,$db); 
+                        // Create connection 
+                        $conn = new mysqli($servername, $username, $password,$db); 
 
-                    // Check connection 
-                        if ($conn->connect_error){ 
-                            die("Connection failed: " . $conn->connect_error); 
+                        // Check connection 
+                            if ($conn->connect_error){ 
+                                die("Connection failed: " . $conn->connect_error); 
+                            }
+
+                        $id= $_SESSION["id"];
+                        $sql=mysqli_query($conn,"SELECT * FROM new_customers where id='$id' ");
+                        $row  = mysqli_fetch_array($sql);
+
+                        if(is_array($row)){
+                            echo "<script>document.getElementById('loginhide').style.display = 'none';</script>";
                         }
-
-                    $id= $_SESSION["id"];
-                    $sql=mysqli_query($conn,"SELECT * FROM new_customers where id='$id' ");
-                    $row  = mysqli_fetch_array($sql);
-            ?>
-
-            <p id="u1"><?php echo $_SESSION["First_Name"] ?>&nbsp&nbsp<?php echo $_SESSION["Last_Name"] ?></p>
-            <p id="u2"><?php echo $_SESSION["Email"] ?></p>
-        
+                ?>
+                <div class="dropdown-content">
+                    <li id="u1"><a href="../php/userprofile.php" class="drpdwntxt"><?php echo $_SESSION["First_Name"] ?></a></li><br>
+                    <li><a href="logout.php" class="drpdwntxt">Sign Out</a></li>
+                </div>    
+            </ul>    
+            
         </div>
 
         <!-- Paragraph -->
