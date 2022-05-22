@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <head>
-    <link rel="stylesheet" href="./styles/pay.css">
+    <link rel="stylesheet" href="CSS/pay.css">
 
 
 
@@ -14,17 +14,17 @@
         <ul>
 
             <li>
-                <a href=""><img src="./images/460b145b-2610-4b39-95a9-1df09218c7eb.jpg" class="logo" width="120px" height="100px"></a>
+                <a href="php/index.php"><img src="Images/460b145b-2610-4b39-95a9-1df09218c7eb.jpg" class="logo" width="120px" height="100px"></a>
             </li>
 
 
 
 
-            <li><a href=""><b>Home</b></a></li>
-            <li><a href=""><b>Archivements</b></a></li>
-            <li><a href=""><b>Product</b></a></li>
-            <li><a href=""><b>Contact us</b></a></li>
-            <li><a href=""><b>Log in</b></a></li>
+            <li><a href="php/index.php"><b>Home</b></a></li>
+            <li><a href="HTML/achievements.html"><b>Achievements</b></a></li>
+            <li><a href="HTML/achievements.html"><b>Product</b></a></li>
+            <li><a href="HTML/achievements.html"><b>Contact us</b></a></li>
+
         </ul>
     </div>
     <hr>
@@ -77,7 +77,7 @@
 
             </div>
 
-            <a href=""><img src="./images/download (1).png" class="crd" width="130px" height="23px"></a> <br>
+            <a href=""><img src="Images/payimg.png" class="crd" width="130px" height="23px"></a> <br>
 
             <input type="submit" name="submit" value="Submit Card Details" id="submit-btn" class="btn">
             
@@ -94,7 +94,7 @@
 
         <div>
          <p id="pay-msg">
-            <?php include'./php/config.php' ?>
+            <?php include'php/config.php' ?>
 
             <?php
                                         
@@ -151,16 +151,16 @@
 
     <section class="footer">
         <div class="social">
-            <a href="https://www.instagram.com"><img src="./images/8cf79628-3d0d-47c1-8d01-79212f95cc2b.jpg" class="instagram" width="50px" height="50px"></a>
-            <a href="https://www.facebook.com"><img src="./images/ef7ae984-ca0e-4fb1-8f2b-8de1bf158dde.jpg" class="fb" width="50px" height="50px"></a>
-            <a href="https://www.snapchat.com"><img src="./images/96e2c46c-23e5-42ed-bbd3-3039375003f4.jpg" class="snap" width="50px" height="50px"></a>
-            <a href="https://www.twitter.com"><img src="./images/80fb6791-d773-45dd-b4bd-addd8db5077d.jpg" class="twitter" width="50px" height="50px"></a>
+            <a href="https://www.instagram.com"><img src="Images/8cf79628-3d0d-47c1-8d01-79212f95cc2b.jpg" class="instagram" width="50px" height="50px"></a>
+            <a href="https://www.facebook.com"><img src="Images/ef7ae984-ca0e-4fb1-8f2b-8de1bf158dde.jpg" class="fb" width="50px" height="50px"></a>
+            <a href="https://www.snapchat.com"><img src="Images/96e2c46c-23e5-42ed-bbd3-3039375003f4.jpg" class="snap" width="50px" height="50px"></a>
+            <a href="https://www.twitter.com"><img src="Images/80fb6791-d773-45dd-b4bd-addd8db5077d.jpg" class="twitter" width="50px" height="50px"></a>
         </div>
         <ul class="list">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Terms</a></li>
-            <li><a href="#">Privacy & Policy</a></li>
+            <li><a href="php/index.php">Home</a></li>
+                <li><a href="HTML/about.html">About</a></li>
+                <li><a href="HTML/terms.html">Terms</a></li>
+                <li><a href="HTML/privacy.html">Privacy & Policy</a></li>
         </ul>
         <p class="copyright">
             The Chosen One Textile & Garment Management System @ 2022
