@@ -1,31 +1,9 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>user profile</title>
     <link rel="stylesheet" href="../CSS/userprofile.css">
     <link rel="shortcut icon" type="Image/jpg" href="../Images/title.jpg">
-</head>
-
-<body>
-
-    <div class="menu">
-        <ul>
-            <li><a href="index.php"><b>Home</b></a></li>
-            <li><a href="../HTML/achievements.html"><b>Achievements</b></a></li>
-            <li><a href="../HTML/products.html"><b>Product</b></a></li>
-            <li><a href="../HTML/contact.html"><b>Contact us</b></a></li>
-            <li id="loginhide"><a href="../HTML/login.html"><b>Log in</b></a></li>
-        </ul>
-    </div>
-
-    <div id="topCenter">
-        <p>User Profile </p>
-        <img src="../Images/logo.jpeg" width="50px" height="50px">
-        <p id="p2"><b>My profile</b></p>
-    </div>
-    <div class="user">
-        <p> <img src="../Images/user.png" width="60px" height="60px"></p>
 
         <?php
                 session_start();
@@ -52,6 +30,27 @@
                 }
         ?>
 
+</head>
+
+<body>
+
+    <div class="menu">
+        <ul>
+            <li><a href="index.php"><b>Home</b></a></li>
+            <li><a href="../HTML/achievements.html"><b>Achievements</b></a></li>
+            <li><a href="../HTML/products.html"><b>Product</b></a></li>
+            <li><a href="../HTML/contact.html"><b>Contact us</b></a></li>
+            <li id="loginhide"><a href="../HTML/login.html"><b>Log in</b></a></li>
+        </ul>
+    </div>
+
+    <div id="topCenter">
+        <p><?php echo $_SESSION["Acc_Type"] ?> Profile </p>
+        <img src="../Images/logo.jpeg" width="50px" height="50px">
+        <p id="p2"><b>My profile</b></p>
+    </div>
+    <div class="user">
+        <p> <img src="../Images/user.png" width="60px" height="60px"></p>
         <p id="u1"><?php echo $_SESSION["First_Name"] ?>&nbsp&nbsp<?php echo $_SESSION["Last_Name"] ?></p>
         <p id="u2"><?php echo $_SESSION["Email"] ?></p>
     </div>

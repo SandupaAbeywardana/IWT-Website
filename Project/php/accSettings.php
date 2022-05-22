@@ -79,11 +79,11 @@
                         <div class="sub-regbox">
                             <label for="accType">Account Type :</label>
                             <select id="accType" name="accType">
-                                <option  value=""><?php echo $_SESSION["Acc_Type"] ?> </option>
-                                <option value="user"> User </option>
-                                <option value="client"> Client </option>
-                                <option value="exporter"> Exporter </option>
-                                <option value="wholesaler"> Wholesaler </option>
+                                <option  value="Select">Select</option>
+                                <option value="User"> User </option>
+                                <option value="Client"> Client </option>
+                                <option value="Exporter"> Exporter </option>
+                                <option value="Wholesaler"> Wholesaler </option>
                             </select>
                         </div>
 
