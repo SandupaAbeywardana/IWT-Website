@@ -16,33 +16,32 @@
                 <li><a href="../HTML/contact.html"><b>Contact us</b></a></li>
                 <li><a href="../HTML/login.html"><b>Log in</b></a></li>
             </ul>
-            <span>
-                <p> <img src="../Images/user.png" width="60px" height="60px"></p>
+            <p> <img src="../Images/user.png" width="60px" height="60px"></p>
 
-        <?php
-                session_start();
+            <?php
+                    session_start();
 
-                $servername ="localhost"; 
-                $username = "root"; 
-                $password = ""; 
-                $db = "textile";
+                    $servername ="localhost"; 
+                    $username = "root"; 
+                    $password = ""; 
+                    $db = "textile";
 
-                // Create connection 
-                $conn = new mysqli($servername, $username, $password,$db); 
+                    // Create connection 
+                    $conn = new mysqli($servername, $username, $password,$db); 
 
-                // Check connection 
-                    if ($conn->connect_error){ 
-                        die("Connection failed: " . $conn->connect_error); 
-                    }
+                    // Check connection 
+                        if ($conn->connect_error){ 
+                            die("Connection failed: " . $conn->connect_error); 
+                        }
 
-                $id= $_SESSION["id"];
-                $sql=mysqli_query($conn,"SELECT * FROM new_customers where id='$id' ");
-                $row  = mysqli_fetch_array($sql);
-        ?>
+                    $id= $_SESSION["id"];
+                    $sql=mysqli_query($conn,"SELECT * FROM new_customers where id='$id' ");
+                    $row  = mysqli_fetch_array($sql);
+            ?>
 
-        <p id="u1"><?php echo $_SESSION["First_Name"] ?>&nbsp&nbsp<?php echo $_SESSION["Last_Name"] ?></p>
-        <p id="u2"><?php echo $_SESSION["Email"] ?></p>
-            </span>
+            <p id="u1"><?php echo $_SESSION["First_Name"] ?>&nbsp&nbsp<?php echo $_SESSION["Last_Name"] ?></p>
+            <p id="u2"><?php echo $_SESSION["Email"] ?></p>
+        
         </div>
 
         <!-- Paragraph -->
@@ -88,7 +87,7 @@
         <!-- User Cards for Customer, Business & Careers-->
         <div class="card">
                 <div class="content">
-                    <a href="Customer.html" class="cardlnk">
+                    <a href="../HTML/Customer.html" class="cardlnk">
                     <img src="../Images/shop.jpg" width="200px" height="200px" alt="Customer Page" class="img">
                     <h3 class="heading">Customer</h3>
                     <p>The Chosen One is an exceptional wear to mens, womens and kids too since this company has started.</p>
@@ -98,7 +97,7 @@
 
                        
                 <div class="content">
-                    <a href="Business.html" class="cardlnk"> 
+                    <a href="../HTML/Business.html" class="cardlnk"> 
                     <img src="../Images/client.jpg" width="200px" height="200px" alt="Business Page" class="img">
                     <h3 class="heading">Business</h3>
                     <p>This is a business organization which also interact with another business organization.</p>
@@ -109,7 +108,7 @@
             
             
                 <div class="content">
-                    <a href="career.html" class="cardlnk">
+                    <a href="../HTML/career.html" class="cardlnk">
                     <img src="../Images/career.jpg" width="200px" height="200px" alt="Career Page" class="img">
                     <h3 class="heading">Careers</h3>
                     <p>We hiring some people who is looking for new jobs. Check out our new job vacancies.</p>
