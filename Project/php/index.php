@@ -69,7 +69,7 @@
         <!-- New Arrivals Images -->
         <center>
             <div id="slidediv" align="center">
-                <a href="newarrivals.html">
+                <a href="../HTML/newarrivals.html">
                     <img class="imgslider" src="../Images/carousel-1.jpg">
                     <img class="imgslider" src="../Images/carousel-2.jpg">
                     <img class="imgslider" src="../Images/carousel-3.jpg">
