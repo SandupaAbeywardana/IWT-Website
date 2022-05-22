@@ -4,22 +4,8 @@
         <title>Textile & Garment Management System</title>
         <link rel="stylesheet" href="../CSS/Style.css">
         <link rel="shortcut icon" type="Image/jpg" href="../Images/title.jpg">
-    </head>
-    <body>
-        <!-- Navigation bar -->
-        <div class="menu" style="font-size: 18px;">
-            <ul>
-                <li><img src="../Images/title.jpg" width="50px" height="50px"></li>
-                <li><a href="index.php"><b>Home</b></a></li>
-                <li><a href="../HTML/achievements.html"><b>Achievements</b></a></li>
-                <li><a href="../HTML/products.html"><b>Product</b></a></li>
-                <li><a href="../HTML/contact.html"><b>Contact us</b></a></li>
-                <li id="loginhide"><a href="../HTML/login.html"><b>Log in</b></a></li>
-            </ul>
-            <ul id="dropdown">
-                <li><img src="../Images/user.png" width="60px" height="60px" class="dropbtn"></li>
 
-                <?php
+   <?php
                         session_start();
 
                         $servername ="localhost"; 
@@ -35,16 +21,38 @@
                                 die("Connection failed: " . $conn->connect_error); 
                             }
 
-                        $id= $_SESSION["id"];
-                        $sql=mysqli_query($conn,"SELECT * FROM new_customers where id='$id' ");
-                        $row  = mysqli_fetch_array($sql);
+                        if (isset($_SESSION["id"])) {
+                            $id= $_SESSION["id"];
+                            $sql=mysqli_query($conn,"SELECT * FROM new_customers where id='$id' ");
+                            $row  = mysqli_fetch_array($sql);
+                        }
+                        else{
+                            echo "<script>document.getElementById('dropdown').style.display = 'none';</script>";
+                            echo "<script>document.getElementById('loginhide').style.display = 'block';</script>";
+                        }
+                        
 
                         if(is_array($row)){
                             echo "<script>document.getElementById('loginhide').style.display = 'none';</script>";
-                            echo "<script>document.getElementById('dropdown').style.display = 'none';</script>";
+                            echo "<script>document.getElementById('dropdown').style.display = 'block';</script>";
 
                         }
                 ?>
+        
+    </head>
+    <body>
+        <!-- Navigation bar -->
+        <div class="menu" style="font-size: 18px;">
+            <ul>
+                <li><img src="../Images/title.jpg" width="50px" height="50px"></li>
+                <li><a href="index.php"><b>Home</b></a></li>
+                <li><a href="../HTML/achievements.html"><b>Achievements</b></a></li>
+                <li><a href="../HTML/products.html"><b>Product</b></a></li>
+                <li><a href="../HTML/contact.html"><b>Contact us</b></a></li>
+                <li id="loginhide"><a href="../HTML/login.html"><b>Log in</b></a></li>
+            </ul>
+            <ul id="dropdown">
+                <li><img src="../Images/user.png" width="60px" height="60px" class="dropbtn"></li>
                 <div class="dropdown-content">
                     <li id="u1"><a href="../php/userprofile.php" class="drpdwntxt"><?php echo $_SESSION["First_Name"] ?></a></li><br>
                     <li><a href="logout.php" class="drpdwntxt">Sign Out</a></li>
