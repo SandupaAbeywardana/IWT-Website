@@ -2,10 +2,10 @@
 
  <?php 
 
-$first_Name = $_POST["first name"];
+$first_Name = $_POST["first_name"];
 $email = $_POST["email"];
 $country = $_POST["Country"];
-$phone_Number = $_POST["phone number"];
+$phone_Number = $_POST["phone_number"];
 $message = $_POST["message"];
 	
 	
@@ -14,10 +14,11 @@ $message = $_POST["message"];
 	
 	
 	if(mysqli_query($conn,$SQL)){
-		echo "<script>alert ('Your Data Submited')</script>";
+		echo "<script>alert ('Your message sent successful')</script>";
+        echo('<script>window.location.replace("../HTML/contact.html");</script>');
 	}
 	else{
-		echo "<script>alert ('Your Data Not Submited 222')</script>";
+		echo "<script>alert ('Your Data Not Submited')</script>";
 	}
 	
 	mysqli_close($conn);

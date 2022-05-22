@@ -29,7 +29,8 @@ if(isset($_POST['save']))
     }
     else
     {
-        echo "Invalid Email ID/Password";
+        echo "<script>alert ('Invalid Email ID/Password')</script>";
+        echo('<script>window.location.replace("../HTML/login.html");</script>');
     }
 }
 
