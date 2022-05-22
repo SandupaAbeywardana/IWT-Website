@@ -17,7 +17,7 @@
 
                             $vacancies = $_POST['vacancies'];
 
-    	                    $sql_auth = "INSERT INTO registration(FirstName,LastName,DOB,AreaCode,PhoneNumber,Email,reg_Address,vacancies) VALUES ('{$Firstname}', '{$LastName}', '{$DOB}', '{$AreaCode}', '{$PhoneNumber}', '{$Email}', '{$reg_Address}','{ $vacancies}')";
+    	                    $sql_auth = "INSERT INTO registration(FirstName,LastName,DOB,AreaCode,PhoneNumber,Email,reg_Address,vacancies) VALUES ('{$Firstname}', '{$LastName}', '{$DOB}', '{$AreaCode}', '{$PhoneNumber}', '{$Email}', '{$reg_Address}','{$vacancies}')";
 
                             $result_auth = mysqli_query($connection, $sql_auth);   
 
