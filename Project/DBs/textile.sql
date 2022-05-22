@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 22, 2022 at 07:05 AM
+-- Generation Time: May 22, 2022 at 08:42 AM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.6
 
@@ -54,18 +54,10 @@ CREATE TABLE `new_customers` (
   `First_Name` varchar(30) NOT NULL,
   `Last_Name` varchar(30) NOT NULL,
   `Email` varchar(50) NOT NULL,
+  `Acc_Type` varchar(50) NOT NULL,
   `Password` varchar(20) NOT NULL,
   `Confirm_Password` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `new_customers`
---
-
-INSERT INTO `new_customers` (`id`, `First_Name`, `Last_Name`, `Email`, `Password`, `Confirm_Password`) VALUES
-(1, 'Eranda', 'Thathsara', 'eranda.thathsara6000@gmail.com', 'eranda2231@', 'eranda2231#'),
-(2, 'Sachinthaka', 'Ayeshmantha', 'sachinthaka60@gmail.com', '12345', '12345'),
-(3, 'Sachinthaka', 'Ayeshmantha', 'sachinthakaa86@gmail.com', 'qwertyu', 'qwertyu');
 
 -- --------------------------------------------------------
 
