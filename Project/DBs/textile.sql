@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 22, 2022 at 04:19 PM
+-- Generation Time: May 22, 2022 at 06:15 PM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.6
 
@@ -24,6 +24,16 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `comment`
+--
+
+CREATE TABLE `comment` (
+  `description` varchar(225) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `contactus`
 --
 
@@ -35,13 +45,6 @@ CREATE TABLE `contactus` (
   `PHONE_NUMBER` int(11) NOT NULL,
   `MESSAGE` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `contactus`
---
-
-INSERT INTO `contactus` (`id`, `FIRST_NAME`, `EMAIL`, `COUNTRY`, `PHONE_NUMBER`, `MESSAGE`) VALUES
-(6, 'dfvb', 'sachinthaka60@gmail.com', 'Sri Lanka', 715886675, 'sd');
 
 -- --------------------------------------------------------
 
@@ -59,15 +62,6 @@ CREATE TABLE `new_customers` (
   `Confirm_Password` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Dumping data for table `new_customers`
---
-
-INSERT INTO `new_customers` (`id`, `First_Name`, `Last_Name`, `Email`, `Acc_Type`, `Password`, `Confirm_Password`) VALUES
-(4, 'Sandupa', 'Abeywardana', 'sandupa.isum@gmail.com', 'user', '123456', '123456'),
-(5, 'Sachinthaka', 'Ayeshmantha', 'sachinthaka600@gmail.com', 'User', '123456', '123456'),
-(6, 'devanji', 'bandara', 'dev.bandara@gmail.com', 'user', '123', '123');
-
 -- --------------------------------------------------------
 
 --
@@ -82,19 +76,6 @@ CREATE TABLE `payment` (
   `cvv` int(10) NOT NULL,
   `Email` varchar(252) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `payment`
---
-
-INSERT INTO `payment` (`Card_Holder_Name`, `Credit_Card_Number`, `Exp_Month`, `Exp_Year`, `cvv`, `Email`) VALUES
-('asdfghjkkjhgfds', '111222333444555', '11', '2011', 123, 'qs@df.com'),
-('adsfg', '123456', '10', '13', 213, 'aw@df.cdf'),
-('asdfghjkjhgfdsa', '123456765421', '12', '1212', 234, 'dfdgf@ff.com'),
-('asdfghjkkjhgfds', '1234567890', '12', '2011', 123, 'asdf@dfg.com'),
-('14563214524562', '3635632563', '5963', '145845623', 95623, 'sandupa.isum@gmail.com'),
-('16324521452', '56324525', '456', '58256', 56, '123@123.lk'),
-('r3f', 'f434f', '34f', '34f', 34, '4fd34@kh.lk');
 
 -- --------------------------------------------------------
 
@@ -113,14 +94,6 @@ CREATE TABLE `registration` (
   `reg_Address` varchar(1000) NOT NULL,
   `vacancies` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `registration`
---
-
-INSERT INTO `registration` (`id`, `FirstName`, `LastName`, `DOB`, `AreaCode`, `PhoneNumber`, `Email`, `reg_Address`, `vacancies`) VALUES
-(3, 'Sachinthaka', 'Ayeshmantha', '2022-05-16', '71', '5886675', 'sachinthaka60@gmail.com', '138/k, Ihalayagoda Gampaha Ihalayagoda Gampaha GAMPAHA Western province Sri Lanka ', 'Manager'),
-(4, 'Chathurani', 'Vimansha', '2022-05-27', '70', '1545158', 'nethmimal21@gmail.com', '35/10 Henegadara Rd Godigamuwa Maharagama  Maharagama Western Province Other Sri Lanka ', 'Manager');
 
 --
 -- Indexes for dumped tables
@@ -160,19 +133,19 @@ ALTER TABLE `registration`
 -- AUTO_INCREMENT for table `contactus`
 --
 ALTER TABLE `contactus`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `new_customers`
 --
 ALTER TABLE `new_customers`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `registration`
 --
 ALTER TABLE `registration`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
