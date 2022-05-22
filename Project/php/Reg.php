@@ -21,7 +21,7 @@ $confirm_password = $_POST["cpsw"];
         echo('<script>window.location.replace("../HTML/login.html");</script>');
 	}
 	else{
-		echo "<script>alert ('Registration unsuccessful.')</script>";
+		echo "<script>alert ('Registration unsuccessful.<br>')</script>";
 	}
 	
 	mysqli_close($conn);
