@@ -16,7 +16,7 @@
                 <li><a href="../HTML/contact.html"><b>Contact us</b></a></li>
                 <li id="loginhide"><a href="../HTML/login.html"><b>Log in</b></a></li>
             </ul>
-            <ul class="dropdown">
+            <ul id="dropdown">
                 <li><img src="../Images/user.png" width="60px" height="60px" class="dropbtn"></li>
 
                 <?php
@@ -41,6 +41,8 @@
 
                         if(is_array($row)){
                             echo "<script>document.getElementById('loginhide').style.display = 'none';</script>";
+                            echo "<script>document.getElementById('dropdown').style.display = 'none';</script>";
+
                         }
                 ?>
                 <div class="dropdown-content">
