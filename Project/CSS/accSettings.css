@@ -66,7 +66,7 @@
         font-size: 16px;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
-    
+
     .bg {
         background-size: 2000px 900px;
         background-image: url("../images/93dbb416b9ed038550c596f871cb0177 (1).jpg");
@@ -337,4 +337,10 @@
         display: flex;
         justify-content: center;
         align-items: right;
+    }
+    #delete:hover{
+        border: 2px solid yellow;
+    }
+    #update:hover{
+        border: 2px solid yellow;
     }
