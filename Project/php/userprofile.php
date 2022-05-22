@@ -53,7 +53,7 @@
     </div>
 
     <div class="r1">
-        <p><a href="#">My orders</a></p>
+        <p><a href="comment.php">Rate Our Service</a></p>
         <p><a href="accSettings.php">Account Settings</a></p>
         <p><a href="logout.php">Sign Out</a></p>
 
