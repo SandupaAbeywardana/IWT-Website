@@ -102,14 +102,14 @@
             </div>
                 
                 <p><input name="submit" type="submit" value="Update" /></p>
-                <button onclick="deleteAcc()">DELETE ACCOUNT</button>
             </form>
            
             <?php } ?>
 
         </div>
 
-        
+        <button onclick="deleteAcc();">DELETE ACCOUNT</button>
+
     </div>
     <script type="text/javascript">
 
@@ -124,10 +124,10 @@
         }
     }
 
-    deleteAcc(){
-        alert("Are you sure !?");
-        window.location.replace("deleteAcc.php");
-        
+    function deleteAcc(){
+        if(confirm("Are you sure !?")){
+            window.location.replace("deleteAcc.php");
+        }
     }
 
 </script>
