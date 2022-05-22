@@ -25,6 +25,9 @@ if(isset($_POST['save']))
         $_SESSION["Email"]=$row['Email'];
         $_SESSION["First_Name"]=$row['First_Name'];
         $_SESSION["Last_Name"]=$row['Last_Name']; 
+        $_SESSION["Confirm_Password"]=$row['Confirm_Password']; 
+        $_SESSION["Acc_Type"]=$row['Acc_Type']; 
+        $_SESSION["Password"]=$row['Password']; 
         header("Location: userprofile.php"); 
     }
     else

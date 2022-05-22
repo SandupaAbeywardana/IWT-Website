@@ -58,7 +58,7 @@
 
     <div class="r1">
         <p><a href="#">My orders</a></p>
-        <p><a href="#">Account Settings</a></p>
+        <p><a href="accSettings.php">Account Settings</a></p>
         <p><a href="logout.php">Sign Out</a></p>
 
     </div>
