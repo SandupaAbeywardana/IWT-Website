@@ -317,7 +317,7 @@
         padding: auto;
     }
     
-    .sub-regbox input {
+    .sub-regbox input,  .sub-regbox select {
         margin: 5px;
         width: 35vh;
         height: 3vh;
@@ -331,7 +331,7 @@
         background-color: #f3efef;
     }
     
-    .sub-regbox label {
+    .sub-regbox label{
         margin: 5px;
         font-weight: 900;
         display: flex;

@@ -17,33 +17,20 @@
                 <a href=""><img src="../Images/460b145b-2610-4b39-95a9-1df09218c7eb.jpg" class="logo" width="120px" height="100px"></a>
             </li>
 
-            <li><a href="../php/index.php"><b>Home</b></a></li>
-            <li><a href="achievements.html"><b>Achievements</b></a></li>
-            <li><a href="products.html"><b>Product</b></a></li>
-            <li><a href="contact.html"><b>Contact us</b></a></li>
-            <li><a href="login.html"><b>Log in</b></a></li>
+            <li><a href="index.php"><b>Home</b></a></li>
+            <li><a href="../HTML/achievements.html"><b>Achievements</b></a></li>
+            <li><a href="../HTML/products.html"><b>Product</b></a></li>
+            <li><a href="../HTML/contact.html"><b>Contact us</b></a></li>
+            <li><a href="../HTML/login.html"><b>Log in</b></a></li>
         </ul>
     </div>
-
-
-<!-- <form>
-        <div class="search">
-            <input type="text" placeholder="search">
-            <button class="search-button">Search</button>
-        </div>
-    </form> -->
-
-
-
-
-
 
 
     <div class="bg">
 
 
 
-        <form method="POST" action="../php/Reg.php">
+        <form method="POST" action="Reg.php">
 
 
 
@@ -73,14 +60,14 @@
                         </div>
 
                         <div class="sub-regbox">
-                            <lable for="accType" name="accType"> <b>Account Type :</b>
-                                <select id="accType" onChange="show_accType()">
-                                    <option value="user"> User </option>
-                                    <option value="client"> Client </option>
-                                    <option value="exporter"> Exporter </option>
-                                    <option value="wholesaler"> Wholesaler </option>
-                                </select>
-                            </lable>
+                            <label for="accType">Account Type :</label>
+                            <select id="accType" name="accType">
+                                <option value="user"> Select </option>
+                                <option value="user"> User </option>
+                                <option value="client"> Client </option>
+                                <option value="exporter"> Exporter </option>
+                                <option value="wholesaler"> Wholesaler </option>
+                            </select>
                         </div>
 
                         <div class="sub-regbox">
