@@ -10,12 +10,39 @@
         <div class="menu">
             <ul>
                 <li><img src="../Images/title.jpg" width="50px" height="50px"></li>
-                <li><a href="index.html"><b>Home</b></a></li>
-                <li><a href="achievements.html"><b>Achievements</b></a></li>
-                <li><a href="products.html"><b>Product</b></a></li>
-                <li><a href="contact.html"><b>Contact us</b></a></li>
-                <li><a href="login.html"><b>Log in</b></a></li>
+                <li><a href="index.php"><b>Home</b></a></li>
+                <li><a href="../HTML/achievements.html"><b>Achievements</b></a></li>
+                <li><a href="../HTML/products.html"><b>Product</b></a></li>
+                <li><a href="../HTML/contact.html"><b>Contact us</b></a></li>
+                <li><a href="../HTML/login.html"><b>Log in</b></a></li>
             </ul>
+            <span>
+                <p> <img src="../Images/user.png" width="60px" height="60px"></p>
+
+        <?php
+                session_start();
+
+                $servername ="localhost"; 
+                $username = "root"; 
+                $password = ""; 
+                $db = "textile";
+
+                // Create connection 
+                $conn = new mysqli($servername, $username, $password,$db); 
+
+                // Check connection 
+                    if ($conn->connect_error){ 
+                        die("Connection failed: " . $conn->connect_error); 
+                    }
+
+                $id= $_SESSION["id"];
+                $sql=mysqli_query($conn,"SELECT * FROM new_customers where id='$id' ");
+                $row  = mysqli_fetch_array($sql);
+        ?>
+
+        <p id="u1"><?php echo $_SESSION["First_Name"] ?>&nbsp&nbsp<?php echo $_SESSION["Last_Name"] ?></p>
+        <p id="u2"><?php echo $_SESSION["Email"] ?></p>
+            </span>
         </div>
 
         <!-- Paragraph -->
@@ -101,10 +128,10 @@
                 <a href="https://www.twitter.com"><img src="../Images/twitter.png" class="twitter" width="50px" height="50px"></a>
             </div>
             <ul class="list">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="terms.html">Terms</a></li>
-                <li><a href="privacy.html">Privacy & Policy</a></li>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="../HTML/about.html">About</a></li>
+                <li><a href="../HTML/terms.html">Terms</a></li>
+                <li><a href="../HTML/privacy.html">Privacy & Policy</a></li>
             </ul>
             <p class="copyright">
                 The Chosen One Textile & Garment Management System @ 2022

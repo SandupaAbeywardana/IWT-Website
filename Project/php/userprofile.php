@@ -11,7 +11,7 @@
 
     <div class="menu">
         <ul>
-            <li><a href="../HTML/index.html"><b>Home</b></a></li>
+            <li><a href="index.php"><b>Home</b></a></li>
             <li><a href="../HTML/achievements.html"><b>Achievements</b></a></li>
             <li><a href="../HTML/products.html"><b>Product</b></a></li>
             <li><a href="../HTML/contact.html"><b>Contact us</b></a></li>
@@ -69,7 +69,7 @@
             <a href="https://www.twitter.com"><img src="../Images/twitter.jpeg" class="twitter" width="50px" height="50px"></a>
         </div>
         <ul class="list">
-                <li><a href="../HTML/index.html">Home</a></li>
+                <li><a href="index.php">Home</a></li>
                 <li><a href="../HTML/about.html">About</a></li>
                 <li><a href="../HTML/terms.html">Terms</a></li>
                 <li><a href="../HTML/privacy.html">Privacy & Policy</a></li>
