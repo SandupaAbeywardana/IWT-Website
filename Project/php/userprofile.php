@@ -11,11 +11,11 @@
 
     <div class="menu">
         <ul>
-            <li><a href="index.html"><b>Home</b></a></li>
-            <li><a href="achievements.html"><b>Achievements</b></a></li>
-            <li><a href="products.html"><b>Product</b></a></li>
-            <li><a href="contact.html"><b>Contact us</b></a></li>
-            <li><a href="login.html"><b>Log in</b></a></li>
+            <li><a href="../HTML/index.html"><b>Home</b></a></li>
+            <li><a href="../HTML/achievements.html"><b>Achievements</b></a></li>
+            <li><a href="../HTML/products.html"><b>Product</b></a></li>
+            <li><a href="../HTML/contact.html"><b>Contact us</b></a></li>
+            <li><a href="../HTML/login.html"><b>Log in</b></a></li>
         </ul>
     </div>
 
@@ -69,10 +69,10 @@
             <a href="https://www.twitter.com"><img src="../Images/twitter.jpeg" class="twitter" width="50px" height="50px"></a>
         </div>
         <ul class="list">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="terms.html">Terms</a></li>
-                <li><a href="privacy.html">Privacy & Policy</a></li>
+                <li><a href="../HTML/index.html">Home</a></li>
+                <li><a href="../HTML/about.html">About</a></li>
+                <li><a href="../HTML/terms.html">Terms</a></li>
+                <li><a href="../HTML/privacy.html">Privacy & Policy</a></li>
         </ul>
         <p class="copyright">
             The Chosen One Textile & Garment Management System @ 2022
