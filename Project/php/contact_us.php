@@ -10,7 +10,7 @@ $message = $_POST["message"];
 	
 	
  
-	$SQL = "insert into contact_us(FIRST_NAME,EMAIL,COUNTRY	,PHONE_NUMBER,MESSAGE)values('$first_Name','$email','$country','$phone_Number','$message')";
+	$SQL = "insert into contactus(FIRST_NAME,EMAIL,COUNTRY,PHONE_NUMBER,MESSAGE)values('$first_Name','$email','$country','$phone_Number','$message')";
 	
 	
 	if(mysqli_query($conn,$SQL)){
