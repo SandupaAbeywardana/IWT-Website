@@ -17,8 +17,7 @@
        $comment=$_POST['description']; 
 
 
-   $sql = "INSERT INTO comment(description)
-   VALUES ('$comment')";
+   $sql = "INSERT INTO comment(description)  VALUES ('$comment')";
 
 
 
