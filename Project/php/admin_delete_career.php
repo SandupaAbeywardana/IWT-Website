@@ -6,5 +6,5 @@
     $query = "DELETE FROM  registration WHERE id=$id"; 
     $result = mysqli_query($conn,$query) or die ( mysqli_error());
 
-    header("Location: careeredit.php"); 
+    header("Location: ../HTML/career.html"); 
 ?>
