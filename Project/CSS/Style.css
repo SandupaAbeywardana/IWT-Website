@@ -44,7 +44,7 @@ body{
   margin-right: 30px;
 }
 
-#dropdown {
+.dropdown {
   position: inherit;
   display: inline-block;
   float: right;

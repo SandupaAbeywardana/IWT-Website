@@ -16,12 +16,12 @@
                 <li><a href="../HTML/contact.html"><b>Contact us</b></a></li>
                 <li id="loginhide"><a href="../HTML/login.html"><b>Log in</b></a></li>
             </ul>
-            <ul id="dropdown">
+            <ul class="dropdown">
                 <li><img src="../Images/user.png" width="60px" height="60px" class="dropbtn"></li>
 
                 <?php
                         session_start();
-
+                        $_SESSION["logged"] = 0;
                         $servername ="localhost"; 
                         $username = "root"; 
                         $password = ""; 
@@ -34,15 +34,13 @@
                             if ($conn->connect_error){ 
                                 die("Connection failed: " . $conn->connect_error); 
                             }
-
-                        $id= $_SESSION["id"];
-                        $sql=mysqli_query($conn,"SELECT * FROM new_customers where id='$id' ");
-                        $row  = mysqli_fetch_array($sql);
-
-                        if(is_array($row)){
-                            echo "<script>document.getElementById('loginhide').style.display = 'none';</script>";
-                            echo "<script>document.getElementById('dropdown').style.display = 'none';</script>";
-
+                        if ($_SESSION["logged"] == 1) {
+                            $id= $_SESSION["id"];
+                            $sql=mysqli_query($conn,"SELECT * FROM new_customers where id='$id' ");
+                            $row  = mysqli_fetch_array($sql);
+                        }
+                        else{
+                            echo "<script>document.getElementById('loginhide').style.display = 'block';</script>";
                         }
                 ?>
                 <div class="dropdown-content">
