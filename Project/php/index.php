@@ -13,18 +13,18 @@
                 <li><a href="index.php"><b>Home</b></a></li>
                 <li><a href="../HTML/achievements.html"><b>Achievements</b></a></li>
                 <li><a href="../HTML/products.html"><b>Product</b></a></li>
-                <li><a href="../HTML/contact.html"><b>Contact us</b></a></li>
+                <li id="contactushide"><a href="../HTML/contact.html"><b>Contact us</b></a></li>
                 <li id="loginhide"><a href="../HTML/login.html"><b>Log in</b></a></li>
             </ul>
-            <ul class="dropdown">
+            <ul class="dropdown" id="hideprofile">
                 <li><img src="../Images/user.png" width="60px" height="60px" class="dropbtn"></li>
 
                 <?php
                         session_start();
                         $_SESSION["logged"] = 0;
-                        $servername ="localhost"; 
-                        $username = "root"; 
-                        $password = ""; 
+                        $servername ="localhost";
+                        $username = "root";
+                        $password = "";
                         $db = "textile";
 
                         // Create connection 
@@ -34,13 +34,17 @@
                             if ($conn->connect_error){ 
                                 die("Connection failed: " . $conn->connect_error); 
                             }
-                        if ($_SESSION["logged"] == 1) {
+                        if (null !== ($_SESSION["id"])) {
                             $id= $_SESSION["id"];
                             $sql=mysqli_query($conn,"SELECT * FROM new_customers where id='$id' ");
                             $row  = mysqli_fetch_array($sql);
+                            echo "<script>document.getElementById('loginhide').style.display = 'none';</script>";   
+                            echo "<script>document.getElementById('contactushide').style.display = 'block';</script>";                             
                         }
                         else{
                             echo "<script>document.getElementById('loginhide').style.display = 'block';</script>";
+                            echo "<script>document.getElementById('hideprofile').style.display = 'none';</script>";
+                            echo "<script>document.getElementById('contactushide').style.display = 'none';</script>";
                         }
                 ?>
                 <div class="dropdown-content">

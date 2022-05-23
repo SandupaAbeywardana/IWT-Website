@@ -6,5 +6,5 @@
     $query = "DELETE FROM  contactus WHERE id=$id"; 
     $result = mysqli_query($conn,$query) or die ( mysqli_error());
 
-    header("Location: admin_contactUsPage.php"); 
+    header("Location: ../HTML/contact.html"); 
 ?>
